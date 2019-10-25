@@ -13,3 +13,11 @@ puts "Enter your age?"
 #Getting user input for the age
 age = gets.chomp.to_i
 
+#first condition if age greater or less than 18
+if age >= 18
+    puts "Are you drunk?"
+    drunk = gets.chomp
+    if drunk == "false"
+        drunk == false
+        puts "You are allowed."
+end
