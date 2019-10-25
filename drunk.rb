@@ -20,4 +20,7 @@ if age >= 18
     if drunk == "false"
         drunk == false
         puts "You are allowed."
+    else drunk == "true"
+        drunk == true
+        puts "You are not allowed"
 end
