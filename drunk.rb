@@ -22,16 +22,21 @@ if age >= 18
      #gets.chomp converts boolean true and false to string 'true' and 'false'
     #so to solve this problem, drunk is given boolean value false when user input is string 'false'
     #in line 24
-    drunk = gets.chomp 
-    if drunk == "false"
-        drunk == false
+    drunk = gets.chomp.upcase
+    puts drunk
+    if drunk == "FALSE"
+        drunk = false
         puts "You are allowed."
-    else drunk == "true"
-        drunk == true #drunk is given boolean value true when user input is string 'true'
+    elsif drunk == "TRUE"
+        drunk = true #drunk is given boolean value true when user input is string 'true'
         puts "You are not allowed"
+    else
+        puts "Invalid Input"
     end
 #if age is less than 18
-else age < 18
+elsif age < 18
     puts "You are not in the legal age to go in."
+else
+    puts "it is an invalid input. Try again"
 
 end
